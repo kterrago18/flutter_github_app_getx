@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_github_app_getx/core/routes/app_routes.dart';
+import 'package:flutter_github_app_getx/presentation/bindings/home_binding.dart';
 import 'package:flutter_github_app_getx/presentation/pages/home_page.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
@@ -27,6 +28,7 @@ class FlutterGithubApp extends StatelessWidget {
         ),
         backgroundColor: Colors.white,
       ),
+      initialBinding: HomeBinding(),
       getPages: AppPages.pages,
     );
   }
