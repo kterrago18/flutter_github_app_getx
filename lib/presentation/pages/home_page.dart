@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_github_app_getx/core/routes/app_routes.dart';
 import 'package:flutter_github_app_getx/presentation/pages/repository_page.dart';
 import 'package:flutter_github_app_getx/presentation/pages/users_page.dart';
 import 'package:get/route_manager.dart';
@@ -30,7 +31,7 @@ class HomePage extends StatelessWidget {
               ),
               OutlinedButton(
                 onPressed: () {
-                  Get.to(const UsersPage());
+                  Get.toNamed(AppRoutes.users);
                 },
                 child: const Text('Users'),
               ),
