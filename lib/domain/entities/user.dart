@@ -5,6 +5,7 @@ class User {
   final int publicRepos;
   final int followers;
   final int following;
+  final String htmlUrl;
   User({
     this.login = '',
     this.avatarUrl = '',
@@ -12,5 +13,6 @@ class User {
     this.publicRepos = 0,
     this.followers = 0,
     this.following = 0,
+    this.htmlUrl = ''
   });
 }
