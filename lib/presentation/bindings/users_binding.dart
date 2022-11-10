@@ -1,4 +1,4 @@
-import 'package:flutter_github_app_getx/data/repositories/use_repository_impl.dart';
+import 'package:flutter_github_app_getx/data/repositories/user_repository_impl.dart';
 import 'package:flutter_github_app_getx/domain/usecases/user/get_users_usecase.dart';
 import 'package:flutter_github_app_getx/presentation/controllers/users_controller.dart';
 import 'package:get/instance_manager.dart';

@@ -9,7 +9,7 @@ class GetUserProfileUseCase implements UseCase<String, UserModel?> {
   
   @override
   Future<UserModel?> call(String param) async {
-    return await iUserRepository.getUseDetails(param);
+    return await iUserRepository.getUserProfile(param);
     
   }
 }
