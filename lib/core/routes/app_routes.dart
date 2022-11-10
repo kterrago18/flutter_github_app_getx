@@ -1,9 +1,9 @@
 import 'package:flutter_github_app_getx/presentation/bindings/home_binding.dart';
-import 'package:flutter_github_app_getx/presentation/bindings/user_details_binding.dart';
+import 'package:flutter_github_app_getx/presentation/bindings/user_profile_binding.dart';
 import 'package:flutter_github_app_getx/presentation/bindings/users_binding.dart';
 import 'package:flutter_github_app_getx/presentation/pages/home_page.dart';
 import 'package:flutter_github_app_getx/presentation/pages/repository_page.dart';
-import 'package:flutter_github_app_getx/presentation/pages/userdetails_page.dart';
+import 'package:flutter_github_app_getx/presentation/pages/userprofile_page.dart';
 import 'package:flutter_github_app_getx/presentation/pages/users_page.dart';
 import 'package:get/route_manager.dart';
 
@@ -23,16 +23,16 @@ class AppPages {
     GetPage(
       name: AppRoutes.home,
       page: () => const HomePage(),
-      binding: HomeBinding(),
+      //binding: HomeBinding(),
     ),
     GetPage(
       name: AppRoutes.userDetails,
-      page: () => const UserDetailsPage(),
-      binding: UserDetailsBinding(),
+      page: () => const UserProfilePage(),
+      binding: UserProfileBinding(),
     ),
     GetPage(
       name: AppRoutes.users,
-      page: () => UsersPage(),
+      page: () => const UsersPage(),
       binding: UsersBinding(),
     ),
   ];

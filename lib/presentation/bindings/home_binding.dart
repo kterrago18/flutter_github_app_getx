@@ -6,9 +6,9 @@ import 'package:get/instance_manager.dart';
 class HomeBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut(() => UserClientImpl(), fenix: true);
-    Get.lazyPut(() => UserDataSourceImpl(userClientImpl: Get.find<UserClientImpl>()), fenix: true);
-    Get.lazyPut(() => UserRepositoryImpl(iUserDataSource: Get.find<UserDataSourceImpl>()), fenix: true);
+    Get.put<UserClientImpl>(UserClientImpl());
+    Get.put<UserDataSourceImpl>((UserDataSourceImpl(userClientImpl: Get.find<UserClientImpl>())));
+    Get.put<UserRepositoryImpl>(UserRepositoryImpl(iUserDataSource: Get.find<UserDataSourceImpl>()));
    
   }
 }
